@@ -1,0 +1,12 @@
+﻿
+@{
+    ViewData["Title"] = "Show";
+
+    CacheModel cacheModel = ViewBag.cacheModel  as CacheModel;
+}
+
+<h1>@ViewBag.zaman</h1>
+<h2>@ViewBag.callback</h2>
+
+<h2>@cacheModel.Id => @cacheModel.Name => @cacheModel.Surname</h2>
+
