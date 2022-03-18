@@ -17,7 +17,7 @@ namespace IDistribütörCacheRedisApp.Controllers
         {
             _distributedCache = distributedCache;
         }
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> Index()    
         {
             DistributedCacheEntryOptions cep = new DistributedCacheEntryOptions();
             cep.AbsoluteExpiration = DateTime.Now.AddMinutes(1);
